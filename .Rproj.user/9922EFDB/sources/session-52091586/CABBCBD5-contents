@@ -20,3 +20,8 @@ pak::pak("surveydown-dev/sdstudio", ask = FALSE)
 sdstudio::launch()
 install.packages("rsconnect")
 rsconnect::writeManifest()
+
+install.packages('rsconnect')
+rsconnect::setAccountInfo(name='po1yq4-youngsam-park', token='664DCCD93EE8FA237AC74AA26DDCE9AC', secret='PtkZBChYM2lSrSYjWeSsGrxYZRrie52AQkgOZjdN')
+library(rsconnect)
+rsconnect::deployApp('d:/github_quarto/surveydown/')
