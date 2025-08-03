@@ -1,0 +1,83 @@
+---
+format: 
+  html:
+    theme: superhero
+lang: ko
+echo: false
+warning: false
+footer-left: "Made with [surveydown](https://surveydown.org)"
+footer-right: '[<i class="bi bi-github"></i> Source Code](https://github.com/surveydown-dev/templates)'
+---
+
+```{r}
+library(surveydown)
+```
+
+::: {#welcome .sd_page}
+# 방학 기간 설문조사
+
+제17기 노사관계전문가과정 원우님들께, 
+
+더운 여름 날씨에 잘 지내고 계신지요?
+2학기 개강을 앞두고 지난 번에 약속한대로 간단한 설문조사를 해보려고 합니다. 
+1학기 수업과 강좌운영은 어땠는지, 
+그리고 2학기 수업 진행을 좀 더 알차고 유익하게 위해서 개선할 점은 무엇인지, 
+여러분들의 의견을 들어보고자 합니다. 
+
+5가지 문항의 짧은 설문조사이기 때문에 잠시만 짬을 내주시면 좋겠습니다. 
+그러면 설문을 시작하겠습니다!
+시작 버튼을 눌러 주세요~
+
+
+```{r}
+sd_next(next_page = 'page1')
+```
+
+
+::: {#page1 .sd_page}
+
+```{r}
+sd_question(
+  type  = 'mc',
+  id    = 'penguins',
+  label = "가장 좋아하는 펭귄은?",
+  option = c(
+    'Adélie'    = 'adelie',
+    'Chinstrap' = 'chinstrap',
+    'Gentoo'    = 'gentoo'
+  )
+)
+```
+
+You need to insert next buttons with `sd_next()` on each page. By default, it will go to the next page defined in the `survey.qmd` file, but you can also specify the page with the `next_page` argument set to the name of the page you want to go to next.
+
+```{r}
+sd_next(next_page = 'page2')
+```
+:::
+
+::: {#page2 .sd_page}
+이어지는 설문입니다.
+
+{surveydown} 은 다양한 형태의 설문을 지원합니다. 다음은 `주관식` 유형의 설문입니다:
+
+```{r}
+sd_question(
+  type  = "text",
+  id    = "silly_word",
+  label = "하고 싶은 말을 써주세요:"
+)
+
+sd_next()
+```
+:::
+
+::: {#end .sd_page}
+## 종료
+
+마지막 페이지입니다.
+
+```{r}
+sd_close()
+```
+:::

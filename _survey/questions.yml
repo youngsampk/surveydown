@@ -1,0 +1,13 @@
+# ! JUST READ - don't change the content of this file
+# Question structure extracted from survey.html
+penguins:
+  type: mc
+  label: 가장 좋아하는 펭귄은?
+  options:
+    Adélie: adelie
+    Chinstrap: chinstrap
+    Gentoo: gentoo
+silly_word:
+  type: text
+  label: '하고 싶은 말을 써주세요:'
+
