@@ -5,6 +5,7 @@
 # pak::pak("surveydown-dev/surveydown") # Development version from GitHub
 
 # Load packages
+library(shiny)
 library(surveydown)
 # sd_db_config()
 # sd_dashboard()
@@ -38,17 +39,19 @@ ui <- sd_ui()
 
 server <- function(input, output, session) {
   # Define any conditional skip logic here (skip to page if a condition is true)
-  sd_skip_forward()
-
-  # Define any conditional display logic here (show a question if a condition is true)
-  sd_show_if()
-
-  # Database designation and other settings
-  sd_server(
-    db = db
-  )
-
-}
+    sd_skip_forward()
+    
+    # Define any conditional display logic here (show a question if a condition is true)
+    sd_show_if(
+    input$yesno == "change" ~ "time"
+    )
+  
+  # 서버 설정
+    sd_server(
+      db = db,
+      all_questions_required = TRUE
+    )
+}    
 
 # Launch the app
 shiny::shinyApp(ui = ui, server = server)

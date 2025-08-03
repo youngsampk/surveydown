@@ -1,0 +1,26 @@
+{
+    "id": "4C4B2365",
+    "path": "D:/github_quarto/surveydown/app.R",
+    "project_path": "app.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1754216106511.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "51,25",
+        "scrollLine": "33"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1754219743,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1754220985188,
+    "read_only": false,
+    "read_only_alternatives": []
+}
