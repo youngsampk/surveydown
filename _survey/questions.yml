@@ -2,7 +2,7 @@
 # Question structure extracted from survey.html
 bestlec:
   type: mc_multiple
-  label: 지난 1학기 수업 중에서 가장 유익했던 강의는 무엇이었나요? 아래 강좌에서 3가지를 골라주세요.
+  label: 지난 1학기 수업 중에서 가장 유익했던 강의는 무엇이었나요? 아래 강좌에서 3가지를 골라주세요
   options:
     한국의 노동환경과 사회적 대화(이종선 교수): lee
     주요 국가의 노사관계와 유형별 특징(윤효원 AIR컨설턴트): yoon
@@ -21,11 +21,11 @@ yesno:
     더 빠른 시간으로 변경하기를 원합니다: change
 time:
   type: mc_buttons
-  label: 만약 더 빠른 시간으로 변경하기를 원한다면, 몇 시에 시작하기를 희망하십니까? 선택은 2가지로로만 제시합니다.
+  label: 만약 더 빠른 시간으로 변경하기를 원한다면, 몇 시에 시작하기를 희망하십니까? 선택은 2가지로로만 제시합니다
   options:
     오후 3시: '3'
     오후 5시: '5'
 message:
   type: textarea
-  label: 알찬 2학기 교육 진행을 위해서 해주고 싶은 말씀이 있으면 직접 남겨 주세요.
+  label: 알찬 2학기 교육 진행을 위해서 해주고 싶은 말씀이 있으면 직접 남겨 주세요
 

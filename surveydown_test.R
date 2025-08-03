@@ -16,6 +16,5 @@ ystable
 surveydown::sd_dashboard()
 
 sd_dashboard()
-install.packages("sdstudio")
 pak::pak("surveydown-dev/sdstudio", ask = FALSE)
 sdstudio::launch()

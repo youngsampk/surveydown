@@ -5,7 +5,6 @@
 # pak::pak("surveydown-dev/surveydown") # Development version from GitHub
 
 # Load packages
-library(shiny)
 library(surveydown)
 # sd_db_config()
 # sd_dashboard()
