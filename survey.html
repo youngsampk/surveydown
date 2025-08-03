@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>survey</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="survey_files/libs/clipboard/clipboard.min.js"></script>
+<script src="survey_files/libs/quarto-html/quarto.js"></script>
+<script src="survey_files/libs/quarto-html/popper.min.js"></script>
+<script src="survey_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="survey_files/libs/quarto-html/anchor.min.js"></script>
+<link href="survey_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="survey_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="survey_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="survey_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="survey_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="survey_files/libs/sw-buttons-group-0.8.7/buttons-group.js"></script>
+
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<div id="welcome" class="sd_page">
+<section id="방학-기간-설문조사" class="level1">
+<h1>방학 기간 설문조사</h1>
+<p>제17기 노사관계전문가과정 원우님들께,</p>
+<p>더운 여름 날씨에 잘 지내고 계신지요?</p>
+<p>2학기 개강을 앞두고 지난 번에 약속한대로 간단한 <strong><code>설문조사</code></strong>를 해보려고 합니다. 1학기 수업과 강좌운영은 어땠는지, 그리고 2학기 수업 진행을 좀 더 알차고 유익하게 위해서 개선할 점은 무엇인지, 여러분들의 의견을 들어보고자 합니다.</p>
+<p>3가지 문항의 짧은 설문조사이기 때문에 잠시만 짬을 내주시면 좋겠습니다. 그러면 설문을 시작하겠습니다! <code>Next</code> 버튼을 눌러 주세요~</p>
+<div class="cell">
+<div class="cell-output-display">
+<div data-next-page="page1" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Next</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="page1" class="sd_page">
+<div class="cell">
+<div class="cell-output-display">
+<div id="container-bestlec" data-question-id="bestlec" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('bestlec_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('bestlec_interacted', true, {priority: 'event'});">
+<div id="bestlec" class="form-group shiny-input-checkboxgroup shiny-input-container" role="group" aria-labelledby="bestlec-label">
+<label class="control-label" id="bestlec-label" for="bestlec"><p>지난 1학기 수업 중에서 가장 유익했던 강의는 무엇이었나요? 아래 강좌에서 3가지를 골라주세요</p>
+</label>
+<div class="shiny-options-group">
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="lee">
+<span>한국의 노동환경과 사회적 대화(이종선 교수)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="yoon">
+<span>주요 국가의 노사관계와 유형별 특징(윤효원 AIR컨설턴트)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="won">
+<span>한국노동운동사 100년의 기록(이원보 명예이사장)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="dae">
+<span>한국 경제사 - 1700년대부터 현재까지(정대영 소장)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="park">
+<span>우리나라 노동법사(박종희 교수)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="nojo">
+<span>2025 노동정책 현안과 노동의 대응(정문주 원장 / 이정희 실장)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="emp">
+<span>2025 노동정책 현안과 기업의 대응(장정우 본부장 / 이명로 본부장)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="kyung">
+<span>우리나라 기업 노사관계의 주요 유형과 특징(정경은 교수)</span>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="bestlec" value="jang">
+<span>노동과 문학, 우리는 왜 월급지상주의를 쓰는가(장강명 작가)</span>
+</label>
+</div>
+</div>
+</div>
+<span class="hidden-asterisk">*</span>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div data-next-page="page2" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Next</button>
+</div>
+</div>
+</div>
+</div>
+<div id="page2" class="sd_page">
+<p>몇몇 원우님들께서 강의시작 시간을 오후 6시에서 조금 더 빨리 시작했으면 좋겠다는 강한 희망을 얘기해 주셨습니다.</p>
+<p>지금은 원우님들이 개인 시간을 쪼개서 교육과정에 참여해오고 계신데 일과 중 시간으로 변경하기를 원하는 것 같습니다.</p>
+<p>물론 시간 조정을 위해서는 현재의 <code>115호실</code> 강의장을 사용할 수 없을 수도 있고, 다른 강의실 배정을 위해 학교측과 협의를 해보아야 합니다. 확인한 바로는 115호실은 <strong>5시부터 사용하는 것은 가능</strong>하지만 더 빠른 시간으로 옮기기는 어려운 상황입니다. 그리고 미리 초빙이 확정된 <code>강사님</code>들의 시간조정이 가능한지도 확인해 보아야 합니다.</p>
+<p>하지만 이런 상황을 감안하더라도 최대한 시간을 앞당겨 조정하기를 원하는 원우님들이 있을 수 있습니다. 그래서 강의 시간을 수정하기를 희망하는지, 어떤 시간으로 수정했으면 하는지 의견을 듣고자 합니다.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="container-yesno" data-question-id="yesno" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('yesno_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('yesno_interacted', true, {priority: 'event'});">
+<div class="form-group shiny-input-container shiny-input-radiogroup shiny-input-container-inline">
+<label class="control-label" id="yesno-label" for="yesno"><p>현재 오후 6시에 시작하는 강의시간을 변경하기를 원하십니까?</p>
+</label>
+<br>
+<div id="yesno" class="radio-group-buttons">
+<div aria-labelledby="yesno-label" class="btn-group btn-group-container-sw" data-toggle="buttons" role="group">
+<div class="btn-group btn-group-toggle" role="group">
+<button class="btn radiobtn btn-default">
+<input type="radio" autocomplete="off" name="yesno" value="keep">
+지금 시간대가 좋습니다
+</button>
+</div>
+<div class="btn-group btn-group-toggle" role="group">
+<button class="btn radiobtn btn-default">
+<input type="radio" autocomplete="off" name="yesno" value="change">
+더 빠른 시간으로 변경하기를 원합니다
+</button>
+</div>
+</div>
+</div>
+<script>
+            $(document).on('click', '#yesno .btn', function() {
+                Shiny.setInputValue('yesno_interacted', true, {priority: 'event'});
+                // Small delay to allow button state to update
+                setTimeout(function() {
+                    var selectedValue = '';
+                    // Look for checked radio input within the container
+                    var checkedInput = $('#yesno input[type="radio"]:checked');
+                    if (checkedInput.length > 0) {
+                        selectedValue = checkedInput.val();
+                    }
+                    Shiny.setInputValue('yesno', selectedValue, {priority: 'event'});
+                }, 50);
+            });
+        </script>
+</div>
+<span class="hidden-asterisk">*</span>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="container-time" data-question-id="time" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('time_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('time_interacted', true, {priority: 'event'});">
+<div class="form-group shiny-input-container shiny-input-radiogroup shiny-input-container-inline">
+<label class="control-label" id="time-label" for="time"><p>만약 더 빠른 시간으로 변경하기를 원한다면, 몇 시에 시작하기를 희망하십니까? 선택은 2가지로로만 제시합니다</p>
+</label>
+<br>
+<div id="time" class="radio-group-buttons">
+<div aria-labelledby="time-label" class="btn-group btn-group-container-sw" data-toggle="buttons" role="group">
+<div class="btn-group btn-group-toggle" role="group">
+<button class="btn radiobtn btn-default">
+<input type="radio" autocomplete="off" name="time" value="3">
+오후 3시
+</button>
+</div>
+<div class="btn-group btn-group-toggle" role="group">
+<button class="btn radiobtn btn-default">
+<input type="radio" autocomplete="off" name="time" value="5">
+오후 5시
+</button>
+</div>
+</div>
+</div>
+<script>
+            $(document).on('click', '#time .btn', function() {
+                Shiny.setInputValue('time_interacted', true, {priority: 'event'});
+                // Small delay to allow button state to update
+                setTimeout(function() {
+                    var selectedValue = '';
+                    // Look for checked radio input within the container
+                    var checkedInput = $('#time input[type="radio"]:checked');
+                    if (checkedInput.length > 0) {
+                        selectedValue = checkedInput.val();
+                    }
+                    Shiny.setInputValue('time', selectedValue, {priority: 'event'});
+                }, 50);
+            });
+        </script>
+</div>
+<span class="hidden-asterisk">*</span>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div data-next-page="end" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+<button class="btn btn-default action-button sd-enter-button" id="page_id_next" onclick="Shiny.setInputValue('next_page', this.parentElement.getAttribute('data-next-page'));" style="display: block; margin: auto;" type="button">Next</button>
+</div>
+</div>
+</div>
+</div>
+<div id="end" class="sd_page">
+<section id="마지막-설문" class="level2">
+<h2 class="anchored" data-anchor-id="마지막-설문">마지막 설문</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="container-message" data-question-id="message" class="question-container" style="width: 100%;" oninput="Shiny.setInputValue('message_interacted', true, {priority: 'event'});" onclick="Shiny.setInputValue('message_interacted', true, {priority: 'event'});">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="message-label" for="message"><p>알찬 2학기 교육 진행을 위해서 해주고 싶은 말씀이 있으면 직접 남겨 주세요</p>
+</label>
+<textarea id="message" class="shiny-input-textarea form-control" style="height:100px;" rows="6" cols="80"></textarea>
+</div>
+<span class="hidden-asterisk">*</span>
+</div>
+</div>
+</div>
+<p>설문에 응해주셔서 정말 감사드립니다.</p>
+<p>설문조사 결과를 참고해서 2학기 개강 시간의 변동이 있게 되면 미리 공지하도록 하겠습니다. <strong>9월 2일</strong> 2학기 개강일에 뵙겠습니다. 감사합니다.</p>
+<img src="logo_ku.png" class="img-fluid quarto-figure quarto-figure-center" width="180">
+<center>
+<strong>고려대 노동대학원-노동문제연구소 제17기 노사관계전문가과정</strong>
+</center>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+<button class="btn btn-default action-button sd-enter-button" id="close-survey-button" onclick="Shiny.setInputValue('show_exit_modal', true, {priority: 'event'});" style="display: block; margin: auto;" type="button">Exit Survey</button>
+</div>
+<script>
+      Shiny.addCustomMessageHandler('closeWindow', function(message) {
+        window.close();
+        if (!window.closed) {
+          alert('Please close this tab manually to exit the survey.');
+        }
+      });
+    </script>
+</div>
+</div>
+</section>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "복사완료!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "복사완료!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
